@@ -1,0 +1,55 @@
+div, main, article, header, footer{
+    border:2px solid black;
+    margin: 5px;
+    text-align: center;
+}
+p{
+    text-align: left;
+    padding: 2px;
+}
+h1{
+    text-align: center;
+}
+footer{
+padding: 20px;
+}
+#Hela{
+    display: flex;
+    flex-direction: column;
+    border: 0px;
+}
+#Länkar{
+display: flex;
+flex-direction: column;
+}
+
+/* Tablet Styles reglerna läses in om bredden */
+
+@media only screen and (min-width: 641px) and (max-width:
+1007px) {
+
+    #Hela
+    {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+    }
+    header{
+        grid-column: 1/3;
+    }
+    footer{
+        grid-column: 1/3;
+    }
+}
+@media only screen and (min-width: 1008px)
+{
+#hela{
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 3fr;
+}
+header{
+    grid-column: 1/3;
+}
+footer{
+    grid-column: 1/3;
+}
+}
